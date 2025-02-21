@@ -19,9 +19,10 @@ export default function Header() {
         justify-between
         px-4
         py-4
-        lg:px-10
+        lg:px-16
         lg:py-6
-        transition-all"
+        transition-all
+        bg-gradient-to-b from-black "
         `}>	
         
             <div className="flex items-center space-x-2 md:space-x-8">
