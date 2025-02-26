@@ -4,20 +4,33 @@ import { InformationCircleIcon } from "@heroicons/react/24/outline";
 import { PlayIcon } from '@heroicons/react/24/solid';
 import { MovieRow } from "./components/MovieRow";
 import { Banner } from "./components/Banner";
+import { getFeaturedMovie, getMoviesByGenre } from "./service/MovieService";
 
-export default function Home() {
+export default async function Home() {
+  const featuredMovie = await getFeaturedMovie('101');
+  const genres = ['Drama', 'Action', 'Comedy', 'Animation'];
+
+  const movies = await Promise.all(
+    genres.map(async (genre) => {
+      const movies = await getMoviesByGenre(genre, { _limit: 5 });
+      return { sectionTitle: genre, movies };
+    })
+ );
   return (
-    <div className="relative h-screen overflow-hidden bg-gradient-to-t from-[#383838] via-[#383838] lg:h-[140vh]"> 
-      
-      <Header />  
-      
-      <main className="relative pb-24 pl-4 lg:pl-16">
+    <div className="relative bg-gradient-to-b pb-8">      
+      <Header />       
+      <main className="relative overflow-y-scroll p-8 pb-20 scrollbar-hide lg:px-16">
+        <Banner movie={featuredMovie} />
 
-        <Banner />
+        {movies.map((movie) => (
+          <MovieRow
+            movies={movie.movies}
+            key={movie.sectionTitle}
+            sectionTitle={movie.sectionTitle}
+          />
+          
+        ))}
 
-        <MovieRow sectionTitle="Popular Movies"/>
-        <MovieRow sectionTitle="Top Rated"/>
-        <MovieRow sectionTitle="See again"/>
       </main>
     </div>
   );
