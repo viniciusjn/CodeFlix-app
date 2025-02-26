@@ -11,7 +11,7 @@ export const InputField: React.FC<InputFieldProps> = ({
 }) => {
     return (
         <div className="flex flex-col">
-            <label htmlFor="email" className="text-sm font-semibold text-gray-500">
+            <label htmlFor={id} className="text-sm font-semibold text-gray-500">
                 {label}
             </label>
             <input id={id} type={type} placeholder={placeholder} className="rounded-lg border border-gray-600 bg-gray-700 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent" />
