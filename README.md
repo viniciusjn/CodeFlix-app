@@ -8,7 +8,7 @@ O objetivo principal desse projeto é a implementação de uma interface para us
 - projeto responsivo;
 - site todo feito com TypeScript, React, Next.js, Tailwind CSS;
 - é utlizado a ferramenta Zod para validação de formulários;
-- a temática adotada foi a iniciada no curso da FullCycle, uma "réplica" da Netflix;
+- a temática adotada foi a iniciada no curso da [FullCycle](https://fullcycle.com.br), uma "réplica" da [Netflix](https://www.netflix.com);
 
 ## Ferramentas e Tecnologias
 
@@ -22,8 +22,6 @@ O objetivo principal desse projeto é a implementação de uma interface para us
 
 ## 🚀 Rodando o projeto
 
-Acesse este [link](https://viniciusjn.github.io/wildbeast-app/) e poderá ver o projeto em execução!
-
 ### -> pré-requisitos
 
 É necessário possuir o [Node.js](https://nodejs.org/en) instalado na sua máquina, para verificar se já o possui, abra o terminal e digite:
@@ -32,24 +30,25 @@ Acesse este [link](https://viniciusjn.github.io/wildbeast-app/) e poderá ver o 
 npm --version
 ```
 
-Também é fundamental ter o [Angular - CLI](https://angular.io/cli) instalado, caso não o tenha, digite o comando abaixo e o terá:
+Também é fundamental a biblioteca [React](https://react.dev) e o framework [Next](https://nextjs.org) estarem em sua máquina, caso não os possua, digite o comando abaixo e ambos serão instalados:
 
 ```
-npm install -g @angular/cli
+npm install next react react-dom
 ```
 
+<br>
 ### -> instalação
 
-Com o Node e Angular instalados, você deverá primeiramente clonar o repositório em uma pasta de sua preferência:
+Com o Node, React e Next instalados, você deverá primeiramente clonar o repositório em uma pasta de sua preferência:
 
 ```
-git clone https://github.com/viniciusjn/conversormoedas-app.git
+git clone https://github.com/viniciusjn/CodeFlix-app.git
 ```
 
-Logo depois deverá entrar no repositório:
+Logo depois deverá entrar no repositório da aplicação:
 
 ```
-cd conversormoedas-app
+cd codeflix-client
 ```
 
 Instalar todas as depedências:
@@ -58,12 +57,13 @@ Instalar todas as depedências:
 npm install
 ```
 
+<br>
 ### -> rodando:
 
 E por fim colocar o projeto funcionando em servidor local:
 
 ```
-ng serve
+npm run dev
 ```
 
 Acesse o link disponibilizado no terminal e veja o projeto rodando!
