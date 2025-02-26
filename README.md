@@ -36,7 +36,6 @@ Também é fundamental a biblioteca [React](https://react.dev) e o framework [Ne
 npm install next react react-dom
 ```
 
-<br>
 ### -> instalação
 
 Com o Node, React e Next instalados, você deverá primeiramente clonar o repositório em uma pasta de sua preferência:
@@ -57,7 +56,6 @@ Instalar todas as depedências:
 npm install
 ```
 
-<br>
 ### -> rodando:
 
 E por fim colocar o projeto funcionando em servidor local:
