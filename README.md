@@ -1,13 +1,14 @@
 # CodeFlix
 
 ## Objetivo
-O objetivo principal desse projeto é a implementação de uma interface para usuários baseada na Netflix. São utilizados conceitos de componentização e módulos do Next.js, além da implementação de testes e autenticação de login.
+O objetivo principal desse projeto é a implementação de uma interface para usuários baseada na [Netflix](https://www.netflix.com). São utilizados conceitos de componentização, módulos e rotas do Next.js, além da implementação de testes, validação de formulários, estilização com responsividade e simulação de uma API através do JSON server.
 
 ## Especificações
 - projeto totalmente focado no front-end;
 - projeto responsivo;
 - site todo feito com TypeScript, React, Next.js, Tailwind CSS;
 - é utlizado a ferramenta Zod para validação de formulários;
+- é utilizado o JSON server para simulação de API;
 - a temática adotada foi a iniciada no curso da [FullCycle](https://fullcycle.com.br), uma "réplica" da [Netflix](https://www.netflix.com);
 
 ## Ferramentas e Tecnologias
@@ -58,13 +59,19 @@ npm install
 
 ### -> rodando:
 
+Antes de rodar o projeto, ainda no repositório "codeflix-client", você deverá iniciliar o JSON server através do comando:
+
+```
+json-server --watch db.json --port 8080
+```
+
 E por fim colocar o projeto funcionando em servidor local:
 
 ```
 npm run dev
 ```
 
-Acesse o link disponibilizado no terminal e veja o projeto rodando!
+Acesse o link disponibilizado no terminal e veja o projeto em funcionamento!
 
 ## License
 Esse projeto possui MIT License Copyright (c) 2025 ᴠɪɴɪ. 
