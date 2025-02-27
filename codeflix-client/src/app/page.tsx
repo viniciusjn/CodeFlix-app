@@ -7,7 +7,7 @@ import { Banner } from "./components/Banner";
 import { getFeaturedMovie, getMoviesByGenre } from "./service/MovieService";
 
 export default async function Home() {
-  const featuredMovie = await getFeaturedMovie('101');
+  const featuredMovie = await getFeaturedMovie('103');
   const genres = ['Drama', 'Action', 'Comedy', 'Animation'];
 
   const movies = await Promise.all(
